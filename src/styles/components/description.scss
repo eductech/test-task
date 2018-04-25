@@ -1,0 +1,39 @@
+.description {
+  &__title {
+    font-size: 2em;
+    line-height: 2em;
+    text-transform: uppercase;
+  }
+  &__content {
+    font-size: 1.35em;
+    line-height: 1.6em;
+  }
+  @media screen and (max-width: $lg) {
+    &__title {
+      font-size: 1.3em;
+    }
+    &__content {
+      font-size: 1.1em;
+    }
+  }
+  @media screen and (max-width: $md) {
+    &__title {
+      font-size: 1em;
+    }
+    &__content {
+      font-size: 0.8em;
+    }
+  }
+  @media screen and (max-width: $sm) {
+    &__title {
+      text-align: center;
+    }
+    &__content,  &__footer {
+      display: none;
+    }
+  }
+
+  &__footer {
+
+  }
+}

@@ -1,0 +1,29 @@
+.button {
+  font-size: 1.4em;
+  background-color: $button-background;
+  color: $button-color;
+  width: 70%;
+  height: 66px;
+  border-radius: 6px;
+  transition: opacity 0.2s ease-out;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+
+  >i {
+    color: $button-i-color;
+    padding-left: 8px; 
+  }
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+
+  @media screen and (max-width: $lg) {
+    font-size: 1.1em;
+  }
+  @media screen and (max-width: $md) {
+    width: 100%;
+  }
+}

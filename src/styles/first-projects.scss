@@ -1,0 +1,63 @@
+@import "variables";
+@import "./components/carousel";
+
+.first-projects {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: map-get($background-color, "third");
+  color: map-get($background-color, "second");
+  height: 100%;
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__description {
+    flex: 0 1 50%;
+    padding: 38px 40px 36px 40px;
+    box-sizing: border-box;
+
+    a {
+      color: map-get($background-color, "second");
+      font-weight: bold;
+    }
+
+    @media screen and (max-width: $sm) {
+      flex: 0;
+      padding: 0;
+    }
+  }
+
+  &__carousel {
+    flex: 0 1.5 500px;
+    padding: 38px 40px 36px 40px;
+
+    @media screen and (max-width: $sm) {
+      flex: 0;
+      padding: 16px 0;
+    }  
+  }
+
+  &__btn-holder {
+    display: none;
+    @media screen and (max-width: $sm) {
+      display: block;
+      width: 60%;
+      margin-bottom: 8px;
+    }
+  }
+
+  &__title-holder {
+    display: none;
+    @media screen and (max-width: $sm) {
+      display: block;
+      width: 60%;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+  }
+}

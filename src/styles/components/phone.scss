@@ -1,0 +1,45 @@
+.phone {
+  @media screen and (max-width: $sm) {
+    width: (314px / 1.6);
+  }  
+  
+  &__body {
+    background: center / contain no-repeat url("./static/phone.png");
+    height: 654px;
+    line-height: 654px;
+    text-align: center;
+    position: relative;
+    @media screen and (max-width: $lg) {
+      height: (654px / 1.2);
+      line-height: (654px / 1.2);
+    }
+    @media screen and (max-width: $md) {
+      height: (654px / 1.4);
+      line-height: (654px / 1.4);
+    }   
+    @media screen and (max-width: $sm) {
+      height: (654px / 1.6);
+      line-height: (654px / 1.6);
+    }  
+  }
+
+  &__img {
+    content: url("./static/screen-0.png");
+    vertical-align: middle;
+    border: 1px solid rgba(0, 1, 1, 0.15);
+    width: 259px;
+    @media screen and (max-width: $lg) {
+      width: (259px / 1.2);
+    } 
+    @media screen and (max-width: $md) {
+      width: (259px / 1.4);
+    } 
+    @media screen and (max-width: $sm) {
+      width: (259px / 1.6);
+    } 
+  }
+
+  &__footer {
+    margin: 32px 0 36px 0;
+  }
+}

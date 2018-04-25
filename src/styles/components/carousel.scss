@@ -1,0 +1,89 @@
+@import "../variables";
+
+.carousel {
+  &__slides {
+    box-sizing:border-box;
+    position: relative;
+    margin: auto;
+
+    @media screen and (max-width:$sm) {
+      max-width: 80%;
+    }
+  }
+
+  &__slide {
+    display: none;
+
+    >img {
+      width: 100%;
+    }
+
+    &_active {
+      display: block;
+    }
+  }
+
+  &__btn-next, &__btn-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.6em;
+    transition: color 0.2s ease;
+    border-radius: 0 3px 3px 0;
+
+    @media screen and (max-width: $lg) {
+      display: none;
+    }
+
+    &:hover {
+      color: $button-background;
+    }
+  }
+
+  &__btn-next {
+    right: -2em;
+    border-radius: 3px 0 0 3px;
+  }
+
+  &__btn-prev {
+    left: -2em;
+  }
+
+  &__dots {
+    display: none;
+    text-align: center;
+
+    @media screen and (max-width: $lg) {
+      display: block;
+    }
+  }
+
+  &__dot {
+    cursor: pointer;
+    height: 0.8em;
+    width: 0.8em;
+    margin: 0 2px;
+    background-color: map-get($background-color, "second");
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.2s ease;
+
+    &_active, &:hover {
+      background-color: $button-background;
+    }
+  }
+
+  &__footer {
+    margin-top: 16px; 
+    text-align: center;
+
+    @media screen and (max-width: $sm) {
+      display: none;
+    }
+  }
+}

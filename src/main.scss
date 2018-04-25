@@ -1,0 +1,39 @@
+// custom fonts
+@import "fonts";
+
+@import "./styles/menu";
+@import "./styles/first";
+// @import "./styles/how-it-works";
+@import "./styles/first-projects";
+
+@import "./styles/variables";
+
+body, html {
+  padding: 0;
+  margin: 0;
+} 
+
+.body {
+  margin-top: $nav-height;
+  display: flex;
+  flex-direction: column;
+  font: $base-font-size "Gotham Pro";
+
+  &__block {
+    height: calc(100vh - #{$nav-height});
+    min-height: calc(890px - #{$nav-height});
+
+    @media screen and (max-width: $lg) {
+      height: calc(100vh - #{$nav-height});
+      min-height: calc(780px - #{$nav-height});
+    }
+    @media screen and (max-width: $md) {
+      height: calc(100vh - #{$nav-height});
+      min-height: calc(690px - #{$nav-height});
+    }
+    @media screen and (max-width: $sm) {
+      height: unset;
+      min-height: unset;
+    }
+  }
+}

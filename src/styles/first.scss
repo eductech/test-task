@@ -1,0 +1,62 @@
+@import "variables";
+@import "components/phone";
+@import "components/social";
+@import "components/description";
+@import "components/button";
+@import "components/beacon";
+
+.first {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: map-get($background-color, "first");
+  height: 100%;
+  @media screen and (max-width: $sm) {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  &__description {
+    flex: 0 1 60%;
+    padding: 38px 40px 36px 40px;
+    box-sizing: border-box;
+
+    @media screen and (max-width: $sm) {
+      flex: 0;
+      padding: 0;
+    }
+  }
+
+  &__beacon {
+    flex: 0 1 144px;
+    @media screen and (max-width: $md) {
+      display: none;
+    }
+  }
+
+  &__phone {
+    flex: 0 0 314px;
+    padding: 36px 40px;
+    @media screen and (max-width: $lg) {
+      flex: 0 0 (314px / 1.2);
+    }  
+    @media screen and (max-width: $md) {
+      flex: 0 0 (314px / 1.4);
+    }  
+    @media screen and (max-width: $sm) {
+      flex: 0;
+      padding: 0;
+    }  
+  }
+
+  &__btn-holder {
+    display: none;
+    @media screen and (max-width: $sm) {
+      display: block;
+      width: 60%;
+      margin-bottom: 16px;
+    }
+  }
+}
