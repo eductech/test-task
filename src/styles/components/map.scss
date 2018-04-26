@@ -53,12 +53,12 @@
   }
 
   &__parking {
-    content: url(./static/bank.png);
+    content: url(./static/parking.png);
     position: absolute;
     z-index: 1;
-    width: 36.7%;
-    top: 38.9%;
-    left: 0%;
+    width: 50.3%;
+    top: 55.9%;
+    left: 18.1%;
     cursor: pointer;
 
     &:hover {
@@ -67,12 +67,12 @@
   }
 
   &__stop {
-    content: url(./static/bank.png);
+    content: url(./static/stop.png);
     position: absolute;
     z-index: 1;
-    width: 36.7%;
-    top: 38.9%;
-    left: 0%;
+    width: 13.7%;
+    top: 58.7%;
+    left: 73.6%;
     cursor: pointer;
 
     &:hover {
@@ -81,12 +81,12 @@
   }
 
   &__caffee {
-    content: url(./static/bank.png);
+    content: url(./static/caffee.png);
     position: absolute;
     z-index: 1;
-    width: 36.7%;
-    top: 38.9%;
-    left: 0%;
+    width: 52.8%;
+    top: 33.8%;
+    left: 47.1%;
     cursor: pointer;
 
     &:hover {
@@ -95,12 +95,12 @@
   }
 
   &__shop {
-    content: url(./static/bank.png);
+    content: url(./static/shop.png);
     position: absolute;
     z-index: 1;
-    width: 36.7%;
-    top: 38.9%;
-    left: 0%;
+    width: 28.3%;
+    top: 4.9%;
+    left: 31.1%;
     cursor: pointer;
 
     &:hover {
@@ -109,12 +109,12 @@
   }
 
   &__museum {
-    content: url(./static/bank.png);
+    content: url(./static/museum.png);
     position: absolute;
     z-index: 1;
-    width: 36.7%;
-    top: 38.9%;
-    left: 0%;
+    width: 16.6%;
+    top: 1.7%;
+    left: 21%;
     cursor: pointer;
 
     &:hover {

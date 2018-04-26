@@ -47,6 +47,26 @@
       content: url("./static/bank-screen.png");
       display: none;
     }
+    &_parking {
+      content: url("./static/parking-screen.png");
+      display: none;
+    }
+    &_stop {
+      content: url("./static/stop-screen.png");
+      display: none;
+    }
+    &_caffee {
+      content: url("./static/caffee-screen.png");
+      display: none;
+    }
+    &_shop {
+      content: url("./static/shop-screen.png");
+      display: none;
+    }
+    &_museum {
+      content: url("./static/museum-screen.png");
+      display: none;
+    }
   }
 
   &__footer {
