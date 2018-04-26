@@ -3,7 +3,7 @@
 
 @import "./styles/menu";
 @import "./styles/first";
-// @import "./styles/how-it-works";
+@import "./styles/how-it-works";
 @import "./styles/first-projects";
 
 @import "./styles/variables";
@@ -29,7 +29,7 @@ body, html {
     }
     @media screen and (max-width: $md) {
       height: calc(100vh - #{$nav-height});
-      min-height: calc(690px - #{$nav-height});
+      min-height: calc(720px - #{$nav-height});
     }
     @media screen and (max-width: $sm) {
       height: unset;

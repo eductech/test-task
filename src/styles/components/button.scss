@@ -27,3 +27,12 @@
     width: 100%;
   }
 }
+
+.button_centered {
+  display: block;
+  margin: auto;
+
+  @media screen and (max-width: $sm) {
+    display: none;
+  }
+}

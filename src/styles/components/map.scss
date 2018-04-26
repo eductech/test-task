@@ -1,0 +1,57 @@
+@import "../variables";
+
+.map {
+  height: 100%;
+
+  &__header {
+    font-size: 2em;
+    line-height: 2em;
+    text-transform: uppercase;
+
+    @media screen and (max-width: $lg) {
+      font-size: 1.3em;
+    }
+    @media screen and (max-width: $md) {
+      font-size: 1em;
+    }
+    @media screen and (max-width: $sm) {
+      text-align: center;
+    }
+
+    >h1 {
+      margin: 0;
+      padding: 0.83em 0 0.83em 40px;
+    }
+  }
+
+  &__content {
+    position: relative;
+  }
+
+  &__background {
+    content: url("./static/map.png");
+    position: relative;
+    display: block;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  &__bank {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  &__parking {
+
+  }
+}

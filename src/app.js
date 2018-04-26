@@ -1,3 +1,7 @@
 import './main.scss';
 
-// components import
+function show(elementNo) {
+  document.getElementById('one').style.visibility = 'hidden';
+}
+
+console.log("hi");

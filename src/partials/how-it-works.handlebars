@@ -1,0 +1,34 @@
+<section class="how-it-works">
+  <div class="how-it-works__map">
+    <div class="map">
+      <header class="map__header">
+        <h1>Как это работает</h1>  
+      </header>
+      <div class="map__content">
+        <img class="map__background" alt="">
+        <img class="map__bank" alt="" onmouseover="show('one')" onmouseout="hide('one')">
+      </div>
+    </div>
+  </div>
+  <div class="how-it-works__phone">
+    <div class="phone">
+      <div class="phone__body">
+        <img id="one" class="phone__img"></img>
+      </div>
+      <footer class="phone__footer">
+        <button class="button button_centered">Хочу так же</button>
+      </footer>
+    </div>
+  </div>
+  <div class="how-it-works__btn-holder">
+    <button class="button">Хочу так же</button>
+  </div>
+  <script>
+    function show(element) {
+      document.getElementById(element).style.visibility = 'visible';
+    }
+    function hide(element) {
+      document.getElementById(element).style.visibility = 'hidden';
+    }
+  </script>
+</section>
