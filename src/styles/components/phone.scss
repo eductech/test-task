@@ -24,7 +24,7 @@
   }
 
   &__img {
-    content: url("./static/screen-0.png");
+    
     vertical-align: middle;
     border: 1px solid rgba(0, 1, 1, 0.15);
     width: 259px;
@@ -37,9 +37,24 @@
     @media screen and (max-width: $sm) {
       width: (259px / 1.6);
     } 
+
+    // img management
+    &_deafult {
+      content: url("./static/screen-0.png");
+      display: inline;
+    }
+    &_bank {
+      content: url("./static/bank-screen.png");
+      display: none;
+    }
   }
 
   &__footer {
     margin: 32px 0 36px 0;
   }
+}
+
+.screen {
+  content: url("./static/bank-screen.png");
+  position: absolute;
 }

@@ -33,6 +33,7 @@
     position: relative;
     display: block;
     width: 100%;
+    min-width: 480px;
     z-index: 2;
     pointer-events: none;
   }
@@ -52,6 +53,72 @@
   }
 
   &__parking {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
 
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  &__stop {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  &__caffee {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  &__shop {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 3;
+    }
+  }
+
+  &__museum {
+    content: url(./static/bank.png);
+    position: absolute;
+    z-index: 1;
+    width: 36.7%;
+    top: 38.9%;
+    left: 0%;
+    cursor: pointer;
+
+    &:hover {
+      z-index: 3;
+    }
   }
 }

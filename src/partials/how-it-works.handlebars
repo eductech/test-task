@@ -6,14 +6,21 @@
       </header>
       <div class="map__content">
         <img class="map__background" alt="">
-        <img class="map__bank" alt="" onmouseover="show('one')" onmouseout="hide('one')">
+        <img class="map__bank" alt="" onmouseover="show('bank')" onmouseout="hide('bank')">
+        <img class="map__parking" alt="" onmouseover="show('bank')" onmouseout="hide('bank')">
       </div>
     </div>
   </div>
   <div class="how-it-works__phone">
     <div class="phone">
       <div class="phone__body">
-        <img id="one" class="phone__img"></img>
+        <img id="deafult" class="phone__img phone__img_deafult"></img>
+        <img id="bank" class="phone__img phone__img_bank"></img>
+        {{!-- <img id="parking" class="screen"></img>
+        <img id="stop" class="screen"></img>
+        <img id="caffee" class="screen"></img>
+        <img id="shope" class="screen"></img>
+        <img id="museum" class="screen"></img> --}}
       </div>
       <footer class="phone__footer">
         <button class="button button_centered">Хочу так же</button>
@@ -25,10 +32,12 @@
   </div>
   <script>
     function show(element) {
-      document.getElementById(element).style.visibility = 'visible';
+      document.getElementById("deafult").style.display = 'none';
+      document.getElementById(element).style.display = 'inline';
     }
     function hide(element) {
-      document.getElementById(element).style.visibility = 'hidden';
+      document.getElementById("deafult").style.display = 'inline';
+      document.getElementById(element).style.display = 'none';
     }
   </script>
 </section>
