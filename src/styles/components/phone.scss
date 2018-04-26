@@ -24,7 +24,6 @@
   }
 
   &__img {
-    
     vertical-align: middle;
     border: 1px solid rgba(0, 1, 1, 0.15);
     width: 259px;
@@ -74,7 +73,23 @@
   }
 }
 
-.screen {
-  content: url("./static/bank-screen.png");
-  position: absolute;
+.phone_animated {
+  @media screen and (max-width: $xs) {
+    width: (314px / 2);
+
+    .phone__body {
+      height: (654px / 2);
+      line-height: (654px / 2); 
+    }
+
+    .phone__img {
+      width: (259px / 2);
+    }
+
+    &__footer {
+      @media screen and (max-width: $sm) {
+        display: none;
+      } 
+    }
+  }
 }

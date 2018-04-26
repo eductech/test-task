@@ -1,5 +1,3 @@
-@import "variables";
-
 .menu {
   background-color: $menu-background;
   position: fixed;
@@ -77,6 +75,8 @@
     margin: 0;
     padding: 0;
     list-style-type: none;
+    overflow-y: scroll;
+    @include scroll-bar;
     @media screen and (max-width: $md) {
       display: none;
     }
@@ -101,17 +101,19 @@
   }
 
   &__toggle-btn {
+    position: absolute;
+    top: -24px;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background: center / contain no-repeat url("./static/button.png");
+    opacity: 0.2;
+    z-index: 5;
     display: none;
+    background-color: map-get($background-color, "second");
+
     @media screen and (max-width: $md) {
       display: block;
-      position: absolute;
-      top: -24px;
-      width: 48px;
-      height: 48px;
-      border: none;
-      background: center / contain no-repeat url("./static/button.png");
-      opacity: 0.2;
-      z-index: 5;
     }
   }
 }

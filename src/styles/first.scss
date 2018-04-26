@@ -1,4 +1,3 @@
-@import "variables";
 @import "components/phone";
 @import "components/social";
 @import "components/description";
@@ -17,6 +16,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+  @include center-sm;
 
   &__description {
     flex: 0 1 60%;

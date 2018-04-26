@@ -1,4 +1,3 @@
-@import "variables";
 @import "./components/carousel";
 
 .first-projects {
@@ -15,6 +14,7 @@
     justify-content: flex-start;
     align-items: center;
   }
+  @include center-sm;
 
   &__description {
     flex: 0 1 50%;

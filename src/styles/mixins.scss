@@ -1,0 +1,28 @@
+// mixin for centering items on md screen
+@mixin center-sm {
+  @media (min-width: $sm) and (max-width: $md) {
+    align-items: center;
+  }
+}
+
+// mixin for map small components
+@mixin map-image {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  &:hover {
+    z-index: 3;
+  }
+}
+
+// scroll-bar element as mixin
+@mixin scroll-bar {
+  &::-webkit-scrollbar {
+    width: 4px;
+    background: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
