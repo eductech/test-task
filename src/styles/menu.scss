@@ -1,3 +1,5 @@
+@import "variables";
+
 .menu {
   background-color: $menu-background;
   position: fixed;
@@ -9,7 +11,7 @@
   align-items: center;
   padding: 0 40px;
   box-sizing: border-box;
-  z-index: 4;
+  z-index: 5;
   @media screen and (max-width: $md) {
     flex-direction: row-reverse;
     justify-content: center;
@@ -28,6 +30,17 @@
     @media screen and (max-width: $md) {
       position: relative;
       font-size: 2em;
+
+      &:hover:before {
+        content: "";
+        position: absolute;
+        width: 70vw;
+        height: 90px;
+        background-color: map-get($background-color, "second");
+        top: -45px;
+        left: -45px;
+        z-index: 5;
+      }
     }
     @media screen and (max-width: $sm) {
       font-size: 1.6em;
@@ -108,7 +121,7 @@
     border: none;
     background: center / contain no-repeat url("./static/button.png");
     opacity: 0.2;
-    z-index: 5;
+    z-index: 6;
     display: none;
     background-color: map-get($background-color, "second");
 
