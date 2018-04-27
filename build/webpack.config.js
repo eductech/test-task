@@ -23,7 +23,7 @@ module.exports = {
     module: {
         rules: [
             { test: /\.(otf|woff|woff2|eot|ttf|svg)$/, loader: 'url-loader?limit=100000' },
-            { test: /\.handlebars$/, loader: "handlebars-loader" },
+            { test: /\.handlebars$/, loader: "handlebars-loader", query: { inlineRequires: /\.png$/ } },
             {
                 test: /\.(scss|css)$/,
                 use: [

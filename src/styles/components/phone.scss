@@ -85,11 +85,11 @@
     .phone__img {
       width: (259px / 2);
     }
+  }
 
-    &__footer {
-      @media screen and (max-width: $sm) {
-        display: none;
-      } 
+  @media screen and (max-width: $sm) {
+    .phone__footer {
+      display: none;
     }
   }
 }
